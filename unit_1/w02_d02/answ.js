@@ -92,15 +92,23 @@
 //  Excited Kitten
 ////////////////////////////////
 
-const talkingKitten = ["Love me, pet me! HSSSSSS!", "...human...why you taking pictures of me?...", "...why does the red dot always get away..."];
-let meow = 0;
+// const talkingKitten = ["Love me, pet me! HSSSSSS!", "...human...why you taking pictures of me?...", "...why does the red dot always get away..."];
+// let meow = 0;
 
-for (i=0; i<21; i++) {
-    if (i % 2 === 0) {
-        console.log(talkingKitten[meow]);
-    } else (i % 2 !== 0); {
-        let purr = Math.random() * (talkingKitten.length);
-        let purring = Math.round(purr)
-        console.log(talkingKitten[purring]);
-    }
-}
+// for (i=0; i<21; i++) {
+//     if (i % 2 === 0) {
+//         console.log(talkingKitten[meow]);
+//     } else (i % 2 !== 0); {
+//         let purr = Math.random() * (talkingKitten.length);
+//         let purring = Math.round(purr)
+//         console.log(talkingKitten[purring]);
+//     }
+// }
+
+////////////////////////////////
+//  Find the Median
+////////////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort();
+console.log(nums[Math.floor(nums.length/2)]);
