@@ -7,3 +7,18 @@
 // .. in order for a function to work, it needs to have a return 
 // .. output cannot come from a console.log - return values will not appear
 // .. in the console unless they are console.log'd
+
+////////////////////////
+
+const checkPalindrome = (word) => {
+  word.toLowerCase()
+  newWord = word.split("").reverse().join("") 
+    if (word === newWord) {
+      return true
+  } else {
+      return false
+  }
+}
+
+console.log(checkPalindrome('radar'));
+console.log(checkPalindrome('Borscht'));
