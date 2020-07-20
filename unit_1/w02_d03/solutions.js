@@ -52,3 +52,28 @@ const printPrimes = (testVal) => {
 }
 
 // printPrimes(97);
+
+const randomMove = () => {
+  let move = ['Rock','Paper','Scissors']
+  return move[Math.floor(Math.random() * move.length)];
+}
+
+let computersMove = randomMove();
+let usersMove = randomMove();
+console.log(computersMove, usersMove)
+
+const rockPaperScissors = (computersMove, usersMove) => {
+  if (computersMove === usersMove) {
+    return `Computer chose ${computersMove} & User chose ${usersMove}. Tie!`
+  } else if (computersMove === 'Rock' && usersMove === 'Scissors') {
+    return `Computer chose ${computersMove} & User chose ${usersMove}. Computer wins!`
+  } else if (computersMove === 'Paper' && usersMove === 'Rock') {
+    return `Computer chose ${computersMove} & User chose ${usersMove}. User wins!`
+  } else if (computersMove === 'Scissors' && usersMove === 'Paper') {
+    return `Computer chose ${computersMove} & User chose ${usersMove}. Computer wins!`
+  } else {
+    return `Computer chose ${computersMove} & User chose ${usersMove}. User wins!`
+  }
+}
+// randomMove();
+console.log(rockPaperScissors(computersMove, usersMove));
