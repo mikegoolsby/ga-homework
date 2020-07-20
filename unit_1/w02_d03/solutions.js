@@ -24,11 +24,31 @@ const checkPalindrome = (word) => {
 // console.log(checkPalindrome('Borscht'));
 
 
-const sumArray = (nums) => {
-  let sum = 0
-  for (i=0; i<nums.length; i++) {
-      sum += nums[i];
-  } return sum
+// const sumArray = (nums) => {
+//   let sum = 0
+//   for (i=0; i<nums.length; i++) {
+//       sum += nums[i];
+//   } return sum
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+const checkPrime = (num) => {
+  for(let i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num > 1;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// console.log(checkPrime(4))
+
+const printPrimes = (testVal) => {
+  let j = 0
+  while (j <= testVal) {
+    if (checkPrime(j) === true) {
+      console.log(j)
+    }
+    j++
+  }
+}
+
+// printPrimes(97);
