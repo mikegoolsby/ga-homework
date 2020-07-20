@@ -1,3 +1,7 @@
+body {
+    font-family: Arial
+}
+
 div.header {
     display: flex;
 }
@@ -5,6 +9,7 @@ div.header {
 h1.head-title {
    color: #1f3eed;
    padding-left: 30px; 
+   font-weight: normal;
 }
 
 p.contact {
@@ -12,6 +17,7 @@ p.contact {
     position: relative;
     padding-left: 700px;
     padding-top: 21px;
+    font-size: 15px;
 }
 
 div.blue-box {
@@ -23,7 +29,7 @@ div.blue-box {
 
 h2.box {
     margin-top: 46px;
-    font-size: 43px;
+    font-size: 50px;
 }
 
 h4.box {
@@ -48,7 +54,8 @@ img.blue-box {
 button.box {
     background-color: white;
     color: #1f3eed;
-    padding: 15px;
+    padding: 20px;
+    font-size: 20px;
     border: none;
     border-radius: 4px;
     margin-top: 0px;
