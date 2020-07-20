@@ -1,0 +1,56 @@
+div.header {
+    display: flex;
+}
+
+h1.head-title {
+   color: #1f3eed;
+   padding-left: 30px; 
+}
+
+p.contact {
+    color: gray;
+    position: relative;
+    padding-left: 700px;
+    padding-top: 21px;
+}
+
+div.blue-box {
+    background-color: #1f3eed;
+    color: white;
+    border-color: #1f3eed;
+    padding: 52px;
+}
+
+h2.box {
+    margin-top: 46px;
+    font-size: 43px;
+}
+
+h4.box {
+    margin-top: 38px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+img.blue-box {
+    width: 217px;
+    float: right;
+    /* position: relative; */
+}
+
+.blue-box::after {
+    content: "";
+    clear: both;
+    display: block;
+    position: relative;
+}
+
+button.box {
+    background-color: white;
+    color: #1f3eed;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
