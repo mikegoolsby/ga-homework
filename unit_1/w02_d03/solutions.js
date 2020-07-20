@@ -60,7 +60,7 @@ const randomMove = () => {
 
 let computersMove = randomMove();
 let usersMove = randomMove();
-console.log(computersMove, usersMove)
+// console.log(computersMove, usersMove)
 
 const rockPaperScissors = (computersMove, usersMove) => {
   if (computersMove === usersMove) {
