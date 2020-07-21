@@ -25,6 +25,8 @@ div.blue-box {
     color: white;
     border-color: #1f3eed;
     padding: 52px;
+    height: 425px;
+    width: auto;
 }
 
 h2.box {
@@ -39,7 +41,7 @@ h4.box {
 }
 
 img.blue-box {
-    width: 217px;
+    width: 221px;
     float: right;
     /* position: relative; */
 }
@@ -49,6 +51,50 @@ img.blue-box {
     clear: both;
     display: block;
     position: relative;
+}
+
+.concierge {
+    float: left;
+    width: 30%;
+    height: 390px;
+    margin-top: 15px;
+    margin-left: 7px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-image: url(https://git.generalassemb.ly/ira/SEIR-FLEX-ZEN/blob/master/unit_1/w02d3/homework/Oscar_CSS_Mockup/images/concierge.jpg?raw=true);
+    background-position: center bottom
+}
+
+p.concierge_box, p.doctor_call, p.family_ins {
+    color: gray;
+}
+
+
+
+.doctor {
+    float: left;
+    width: 30%;
+    height: 390px;
+    margin-top: 15px;
+    margin-left: 39px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-image: url(https://git.generalassemb.ly/ira/SEIR-FLEX-ZEN/blob/master/unit_1/w02d3/homework/Oscar_CSS_Mockup/images/doctor.jpg?raw=true);
+    background-position: center bottom;
+}
+
+.family {
+    float: right;
+    width: 30%;
+    height: 390px;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-image: url(https://git.generalassemb.ly/ira/SEIR-FLEX-ZEN/blob/master/unit_1/w02d3/homework/Oscar_CSS_Mockup/images/business.jpg?raw=true);
+    background-position: center bottom;
 }
 
 button.box {
@@ -61,3 +107,74 @@ button.box {
     margin-top: 0px;
 }
 
+button.more {
+    background-color: white;
+    width: auto;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.pg_bottom {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 520px;
+}
+
+h4.ready {
+    color: gray;
+    font-weight: normal;
+}
+
+.quote-buttons {
+    text-align: center;
+}
+
+button.for-you {
+    background-color: #1f3eed;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    border: none;
+    border-radius: 4px;
+    float: left;
+    margin-left: 175px;
+}
+
+button.for-business {
+    background-color: white;
+    color: #1f3eed;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    float: right;
+    margin-right: 165px;
+}
+
+.gray-line {
+    border-bottom: none;
+    margin-top: 330px;
+}
+
+.first > ul li {
+    list-style: none;
+    color: gray;
+    margin-bottom: 62px;
+    float: left;
+    width: 50%;
+}
+
+ul.second-ul {
+    margin-bottom: 0px;
+}
+
+.second > ul li {
+    list-style: none;
+    color: gray;
+    margin-bottom: 62px;
+    float: right;
+    width: 50%;
+}
