@@ -1,6 +1,7 @@
 let wallet = 0;
 let tool = 'teeth';
 
+// begins the game, first iteration
 const cutLawn = () => {
   let firstAnswer = prompt('Time to landscape. What will it be?', "'Cut the lawn', 'New tool', or 'Quit'?")
   if (firstAnswer === 'Cut the lawn') {
@@ -17,6 +18,7 @@ const cutLawn = () => {
   }
 }
 
+// allows the player to buy their first new tool, subtracts purchase price from their wallet
 const newTool = () => {
   tool = 'rusty scissors'
   wallet-=5
@@ -24,6 +26,7 @@ const newTool = () => {
   keepCutting();
 }
 
+// second iteration, keeps checking wallet amount until user has enough to buy next tool
 const keepCutting = () => {
   let secondAnswer = prompt('Time to landscape. What will it be?', "Cut the lawn', 'New tool', or 'Quit'?")
   if (secondAnswer === 'Cut the lawn') {
@@ -40,6 +43,7 @@ const keepCutting = () => {
   }
 }
 
+// informs user that they've purchased a new tool, subtracts purchase price from their wallet
 const newToolAgain = () => {
   tool = 'push lawnmower'
   wallet-=25
@@ -47,6 +51,7 @@ const newToolAgain = () => {
   cutForMoney();
 }
 
+// iterates again, same logic. checks wallet balance vs user inputs
 const cutForMoney = () => {
   let thirdAnswer = prompt('Time to landscape. What will it be?', "Cut the lawn', 'New tool', or 'Quit'?")
   if (thirdAnswer === 'Cut the lawn') {
@@ -70,6 +75,7 @@ const newToolBattMower = () => {
   cutForBigMoney();
 }
 
+// the game keeps looping through various versions of the above iterations, each function calls in the previous to ensure proper flow.
 const cutForBigMoney = () => {
   let fourthAnswer = prompt('Time to landscape. What will it be?', "Cut the lawn', 'New tool', or 'Quit'?")
   if (fourthAnswer === 'Cut the lawn') {
@@ -120,5 +126,7 @@ const victoryLap = () => {
   }
 }
 
+
+// this statement starts the game 
 cutLawn();
 
