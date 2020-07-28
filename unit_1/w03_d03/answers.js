@@ -21,7 +21,7 @@
 
 
 let rainbow = ['red','orange','yellow','green','blue','indigo','violet'];
-console.log(rainbow[4]);
+// console.log(rainbow[4]);
 
 const mike = {
     favoriteFood: 'pad thai',
@@ -30,14 +30,7 @@ const mike = {
     favoriteDataType: 'objects'
 }
 
-console.log(mike.favoriteDataType);
-
-
-
-
-
-
-
+// console.log(mike.favoriteDataType);
 
 const crazyObject = {
     taco: [{meat: 'steak',
@@ -64,3 +57,11 @@ const crazyObject = {
       ]
     }
   }
+
+// console.log(crazyObject.taco[1].salsa[5]);
+// console.log(crazyObject.larry.quotes[0]);
+// console.log(crazyObject.larry.characters[2].favourtieHobby);
+// console.log(crazyObject.larry.nicknames[1])
+// console.log(Object.keys(crazyObject.larry)[2])
+// crazyObject.larry.quotes.push("I'm trying to elevate small talk to medium talk")
+// console.log(crazyObject.larry.quotes)
