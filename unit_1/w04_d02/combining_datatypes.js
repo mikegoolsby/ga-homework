@@ -101,15 +101,15 @@ const calculate = (num1, num2, operates) => {
 ////////////////////////
 
 
-const bar = () => {
-    console.log('bar here');
-}
-bar(); // have to invoke functions in the proper spot
+// const bar = () => {
+//     console.log('bar here');
+// }
+// bar(); // have to invoke functions in the proper spot
 
-const foo = () => {
-    console.log('foo here');
-}
-foo(); // same here
+// const foo = () => {
+//     console.log('foo here');
+// }
+// foo(); // same here
 
 // foo(); // you can't invoke a function before you define it
 
@@ -119,3 +119,46 @@ foo(); // same here
 
 ////////////////////////
 
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+const panagrams = [ 'The','job', 'requires', 'extra', 'pluck', 'and', 'zeal', 'from', 'every', 'young', 'wage', 'earner',  'Quick', 'zephyrs', 'blow,', 'vexing', 'daft', 'Jim', 'Two', 'driven', 'jocks', 'help', 'fax', 'my', 'big', 'quiz', 'Five', 'quacking', 'zephyrs', 'jolt', 'my', 'wax', 'bed', 'The', 'five', 'boxing', 'wizards', 'jump', 'quickly', 'Pack', 'my', 'box', 'with', 'five', 'dozen', 'liquor', 'jugs', 'We', 'promptly', 'judged', 'antique', 'ivory', 'buckles', 'for', 'the', 'next', 'prize', 'Jaded', 'zombies', 'acted', 'quaintly', 'but', 'kept','driving','their','oxen','forward']
+
+// EVERY
+console.log(nums.every(num => num >= 0))
+console.log(panagrams.every(word => word.length < 8));
+
+// FILTER
+console.log(nums.filter(num => num < 4));
+console.log(panagrams.filter(word => word.length % 2 === 0));
+
+// FIND
+console.log(nums.find(num => num % 5 === 0));
+console.log(panagrams.find(word => word.length > 3));
+
+// FIND INDEX
+console.log(nums.findIndex(num => num % 3 === 0));
+console.log(panagrams.findIndex(word => word.length < 2));
+
+// FOR EACH
+nums.forEach((num) => {
+    console.log(num * 3);
+})
+
+panagrams.forEach((word) => {
+    console.log(word + '!')
+})
+
+// MAP
+const newNums = nums.map((num) => {
+    return num * 100
+})
+
+const newPanagrams = panagrams.map((word) => {
+    return word.toUpperCase();
+})
+
+// SOME 
+console.log(nums.some(num => num % 7 === 0));
+console.log(panagrams.some(word => {
+    return word.includes('a');
+}))
