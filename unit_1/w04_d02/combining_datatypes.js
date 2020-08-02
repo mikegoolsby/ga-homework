@@ -25,3 +25,31 @@ const apartmentBuilding = [
 ]
 
 // console.log(apartmentBuilding[0][1]);
+
+const knit = () => {
+  const scarves = {
+      item: 'scarf',
+      size: '6ft'
+  }
+  return scarves;
+}
+
+// console.log(knit()); 
+
+const crayonSelector = (index) => {
+    const crayonBox = {
+        colors: ['red', 'yellow', 'green', 'blue']
+    }
+    return crayonBox.colors[index]
+}
+
+// console.log(crayonSelector(0));
+
+const powerButton = () => {
+  const options = () => {
+      console.log('select a song')
+  }
+  return options();
+}
+
+// powerButton();
