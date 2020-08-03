@@ -40,7 +40,7 @@ class Person {
     eat() {
         this.weight++
         this.mood++;
-    }
+    } 
     exercise() {
         this.weight--;
     }
@@ -57,3 +57,31 @@ class Person {
         this.bankAccount-=hamster.getPrice();
     }
 }
+
+const timmy = new Person('Timmy');
+
+while (timmy.age < 5) {
+    timmy.ageUp();
+}
+
+for (i=0; i<5; i++) {
+    timmy.eat();
+}
+
+for (i=0; i<5; i++) {
+    timmy.exercise();
+}
+
+while (timmy.age < 14) { // aging timmy 9 years
+    timmy.ageUp();
+}
+
+const gus = new Hamster('Gus');
+gus.owner = 'Timmy'
+
+timmy.buyHamster(gus)
+
+while (timmy.age < 29) { // aging timmy 15 years 
+    timmy.ageUp();
+}
+console.log(timmy)
