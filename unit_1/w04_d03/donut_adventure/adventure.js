@@ -17,6 +17,8 @@ class Hero {
     }
     fight() {
         console.log('i\'m ready to rumble')
+        // let newWeapon = Math.floor(Math.random(Object.keys(this.weapons))) // WIP
+        console.log(`${this.name} has used ${newWeapon}!`)
     }
 }
 
@@ -46,3 +48,10 @@ class Enemy {
 }
 
 const pizzaRat = new Enemy('Pizza Rat');
+
+dougieDonut.talkSass();
+pizzaRat.talkSmack();
+dougieDonut.announceHealth();
+pizzaRat.announceHealth();
+
+dougieDonut.fight();
