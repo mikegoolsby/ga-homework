@@ -13,12 +13,12 @@ class Hero {
         console.log(this.catchPhrases[Math.floor(Math.random()*this.catchPhrases.length)])
     }
     announceHealth() {
-        console.log(this.health)
+        console.log(`${this.name}'s health is now ${this.health}!`)
     }
-    fight() {
+    fight(enemy) {
         console.log('i\'m ready to rumble')
-        // let newWeapon = Math.floor(Math.random(Object.keys(this.weapons))) // WIP
-        console.log(`${this.name} has used ${newWeapon}!`)
+        console.log(`Sprinkle spray has done ${this.weapons.sprinkleSpray} damage!`)
+        enemy.health -= this.weapons.sprinkleSpray
     }
 }
 
@@ -40,10 +40,12 @@ class Enemy {
         console.log(this.catchPhrases[Math.floor(Math.random()*this.catchPhrases.length)])
     }
     announceHealth() {
-        console.log(this.health)
+        console.log(`${this.name}'s health is now ${this.health}!`)
     }
-    fight() {
+    fight(enemy) {
         console.log('i\'m gonna flatten you like a slice of pepperoni!')
+        console.log(`Cheese greese has done ${this.weapons.cheeseGrease} damage!`)
+        enemy.health -= this.weapons.cheeseGrease
     }
 }
 
@@ -54,4 +56,8 @@ pizzaRat.talkSmack();
 dougieDonut.announceHealth();
 pizzaRat.announceHealth();
 
-dougieDonut.fight();
+pizzaRat.fight(dougieDonut);
+dougieDonut.fight(pizzaRat);
+
+dougieDonut.announceHealth();
+pizzaRat.announceHealth();
