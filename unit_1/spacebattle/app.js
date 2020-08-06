@@ -39,18 +39,38 @@ class Alien {
     }
 }
 
+// For loop that factories 6 alien ships from the Alien class
 let alienShips = []
 for (let i=0; i<6; i++) {
     alienShips.push(new Alien)
 }
 
+// Beginning dialogue in the form of browser alerts
 alert("Welcome to SPACEBATTLE! The timeless classic console space adventure between space foes.")
-setTimeout(() => {alert(`Captain Space Cat... There are ${alienShips.length} alien ships headed your way! Start reading your browser console and ready up for battle!`);}, 2000);
+alert(`Captain Space Cat... There are ${alienShips.length} alien ships headed your way! Start reading your browser console and ready up for battle!`)
+
+// Prompt to capture first user input (maybe abstract this into a function?)
+const initialInput = prompt("Atack, or retreat?", "'Attack', 'Retreat'");
 
 
-// attack alien[0] > then alien[1]
+let alien = alienShips[0]
+if (initialInput.toLowerCase() === 'attack') {
+    ussSpaceCat.attack(alien);
+} else {
+    ussSpaceCat.retreat();
+}
+
+// if (alien.hull >= 0) {
+//     alien.attack(ussSpaceCat)
+// } else {
+//     initialInput();
+// }
+
+// Assigns alien to the first index in the Alien Ships array, then attacks the first ship up
+// let alien = alienShips[0]
+// ussSpaceCat.attack(alien);
 
 // alien1.attack(ussSpaceCat);
-// ussSpaceCat.attack(alien1);
+
 
 // ussSpaceCat.retreat();
