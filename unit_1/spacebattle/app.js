@@ -48,7 +48,7 @@ alert("Welcome to SPACEBATTLE! The timeless classic console space adventure betw
 setTimeout(() => {alert(`Captain Space Cat... There are ${alienShips.length} alien ships headed your way! Start reading your browser console and ready up for battle!`);}, 2000);
 
 
-
+// attack alien[0] > then alien[1]
 
 // alien1.attack(ussSpaceCat);
 // ussSpaceCat.attack(alien1);
