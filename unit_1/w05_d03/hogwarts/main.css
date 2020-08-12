@@ -11,6 +11,16 @@ body {
     opacity: .5;
 }
 
-.trunk  {
+.trunk, .chest  {
     list-style-type: none;
+}
+
+.cabbage {
+    color: chartreuse;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
 }

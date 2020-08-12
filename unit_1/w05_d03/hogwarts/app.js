@@ -1,4 +1,5 @@
 $(() => {
+// YEAR 1 & 2
     const $container = $('#container')
     console.log($container)
     const $h1 = $('<h1>')
@@ -18,7 +19,7 @@ $(() => {
     const $h4Wand = $('<h4>');
     $h4Wand.text("Hornbeam Wand with Dragon Heartstring Core");
     $h4Wand.appendTo($container);
-
+// YEAR 3
     $('<ul>').appendTo($container).attr('class', 'trunk');
     const $butterBeer = $('<li>Butter Beer</li>');
     $butterBeer.appendTo('.trunk');
@@ -32,7 +33,7 @@ $(() => {
     $leash.appendTo('.trunk');
     const $bertieBotts = $('<li>Bertie Botts Every Flavor Beans</li>');
     $bertieBotts.appendTo('.trunk');
-
+// YEAR 4
     const $table = $('<table>');
     $table.appendTo('body');
     $('<h5>Spring 2017</h5>').insertBefore($table);
@@ -54,7 +55,7 @@ $(() => {
     const $tr5 = $('<tr>').appendTo('table');
     $('<td>').appendTo($tr5).text("Friday");
     $('<td>').appendTo($tr5).text("No Class");
-
+// YEAR 5
     $h4Wand.remove();
     $butterBeer.remove();
     $h4Wand.insertAfter($h4).css('color', 'indigo');
@@ -62,4 +63,14 @@ $(() => {
     $h4.hide();
     $h4.insertAfter($h3);
     $h4.show();
+// YEAR 6
+    $('.secret').delay(2000).fadeOut();
+    $('.secret').show('slow');
+    $leash.addClass('cabbage');
+    $leash.removeClass('cabbage');
+// YEAR 7
+    $('h5').text("Fall 2018");
+    $butterBeer.insertBefore($invisibilityCloak);
+    $('ul').addClass('chest');
+    $('ul').removeClass('trunk');
 });
