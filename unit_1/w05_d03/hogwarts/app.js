@@ -54,4 +54,12 @@ $(() => {
     const $tr5 = $('<tr>').appendTo('table');
     $('<td>').appendTo($tr5).text("Friday");
     $('<td>').appendTo($tr5).text("No Class");
+
+    $h4Wand.remove();
+    $butterBeer.remove();
+    $h4Wand.insertAfter($h4).css('color', 'indigo');
+    $h4.insertAfter('table');
+    $h4.hide();
+    $h4.insertAfter($h3);
+    $h4.show();
 });
