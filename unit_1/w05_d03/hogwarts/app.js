@@ -18,5 +18,18 @@ $(() => {
     const $h4Wand = $('<h4>');
     $h4Wand.text("Hornbeam Wand with Dragon Heartstring Core");
     $h4Wand.appendTo($container);
-
+    
+    $('<ul>').appendTo($container).attr('class', 'trunk');
+    const $butterBeer = $('<li>Butter Beer</li>');
+    $butterBeer.appendTo('.trunk');
+    const $invisibilityCloak = $('<li>Invisibility Cloak</li>').attr('class', 'secret');
+    $invisibilityCloak.appendTo('.trunk');
+    const $magicMap = $('<li>Magic Map</li>').attr('class', 'secret');
+    $magicMap.appendTo('.trunk');
+    const $timeTurner = $('<li>Time Turner</li>').attr('class', 'secret');
+    $timeTurner.appendTo('.trunk');
+    const $leash = $('<li>Leash</li>').attr('class', 'owl');
+    $leash.appendTo('.trunk');
+    const $bertieBotts = $('<li>Bertie Botts Every Flavor Beans</li>');
+    $bertieBotts.appendTo('.trunk');
 });
