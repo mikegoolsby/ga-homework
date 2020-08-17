@@ -118,11 +118,14 @@ const keepItSecretKeepItSafe = () => {
 const makeBaddies = () => {
 
   // 1. display an unordered list of baddies in Mordor
-
+  
   // 2. give each of the baddies a class of "baddy"
-
-  // 3. remember to append the ul to Mordor
-
+ 
+  baddies.forEach(baddie => {
+    const $baddies = $('<ul>').attr('class', 'baddy').text(baddie)
+    // 3. remember to append the ul to Mordor
+    $('#Mordor').append($baddies);
+  });
 };
 
 // COMMIT YOUR WORK
