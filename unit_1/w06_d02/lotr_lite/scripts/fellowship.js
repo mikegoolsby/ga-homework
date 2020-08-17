@@ -217,11 +217,13 @@ const forgeTheFellowShip = () => {
 const theBalrog = () => {
 
   // 1. change the 'Gandalf' text to 'Gandalf the White'
-
+  const list = $('aside').find('.buddy')
+  const allListElements = list
   // 2. add a class "the-white" to this element
+  allListElements.eq([0]).text('Gandalf the White').attr('class', 'the-white');
 
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
-
+  
 };
 
 // COMMIT YOUR WORK
