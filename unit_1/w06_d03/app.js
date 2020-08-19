@@ -18,5 +18,12 @@ $('form').on('submit', (event) => {
     render();
 });
 
+$('button').on('click', (event) => {
+  event.preventDefault();
+  toDoList.push($('#input-box').val());
+  $(event.currentTarget).trigger('reset');
+  console.log(event)
+  render();
+});
 
 
