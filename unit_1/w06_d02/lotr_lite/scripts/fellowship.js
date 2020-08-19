@@ -223,7 +223,7 @@ const theBalrog = () => {
   allListElements.eq([0]).text('Gandalf the White').attr('class', 'the-white');
 
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
-  
+
 };
 
 // COMMIT YOUR WORK
@@ -235,11 +235,16 @@ const theBalrog = () => {
 const hornOfGondor = () => {
 
   // 1. create a pop-up alert that the horn of gondor has been blown
-
+  alert("The horn of gondor has been blown!")
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
+  $list = $('aside').find('.buddy')
+  console.log($list)
+  $boromir = $list.eq([3])
+  $boromir.css('text-decoration', 'line-through')
+  // this doesnt work. i've tried several methods. other folks in the class have experienced the same. This is the last method i ended up trying.
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
+  $uruk = $('.baddy').eq(2)
+  $uruk.remove()
 };
 
 // COMMIT YOUR WORK
