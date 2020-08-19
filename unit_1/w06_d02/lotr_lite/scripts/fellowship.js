@@ -238,10 +238,9 @@ const hornOfGondor = () => {
   alert("The horn of gondor has been blown!")
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
   $list = $('aside').find('.buddy')
-  console.log($list)
+  // console.log($list)
   $boromir = $list.eq([3])
   $boromir.css('text-decoration', 'line-through')
-  // this doesnt work. i've tried several methods. other folks in the class have experienced the same. This is the last method i ended up trying.
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
   $uruk = $('.baddy').eq(2)
   $uruk.remove()
@@ -254,11 +253,18 @@ const hornOfGondor = () => {
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
-
+  
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
+  const hobbitList = $('#the-fellowship').find('.hobbit')
+  const $frodo = hobbitList.eq([0])
+  // console.log($frodo)
+  $('#Mordor').append($frodo);
+  const $sam = hobbitList.eq([1])
+  $('#Mordor').append($sam);
 
   // 2. add a div with an id of 'mount-doom' to Mordor
-
+  const $mountDoom = $('<div>').attr('id', 'mount-doom')
+  $('#Mordor').append($mountDoom);
 };
 
 // COMMIT YOUR WORK
