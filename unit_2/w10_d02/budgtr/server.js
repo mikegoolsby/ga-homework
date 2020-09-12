@@ -14,7 +14,7 @@ app.engine("jsx", require("express-react-views").createEngine()); //Sets our Vie
 ////////////////////
 // Routes and routers
 ////////////////////
-app.get('/', (req, res) => {
+app.get('/budgtr', (req, res) => {
     res.send('<h3>Hello</h3>')
 })
 
