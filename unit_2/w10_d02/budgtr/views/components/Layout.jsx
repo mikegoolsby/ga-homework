@@ -5,13 +5,16 @@ class Layout extends  React.Component {
         return (
             <html>
                 <head>
-                <link rel="stylesheet" href="../css/style.css"/>
+                <link rel="stylesheet" href="/style.css"/>
                 <title>{this.props.title}</title>
                 </head>
                 <body>
-                    <h1>test</h1>
+                    <main>
+                        {this.props.children}
+                    </main>
                 </body>
             </html>
         )
     }
 }
+module.exports = Layout
