@@ -4,6 +4,7 @@ const budget = require("../models/budget.js");
 
 class index extends React.Component {
     render() {
+        const {item, index} = this.props
        return (
            <Layout>
                <h1>Budgtr</h1>
@@ -11,7 +12,7 @@ class index extends React.Component {
                    {budget.map((budget) => {
                         return <tr>
                             <td>{[budget.date]}</td>
-                            <td><a href="#">{[budget.name]}</a></td>
+                            <td><a href={`/budgets/${index}/show`}>{[budget.name]}</a></td>
                             <td>{[budget.from]}</td>
                             <td>{[budget.amount]}</td>
                         </tr>

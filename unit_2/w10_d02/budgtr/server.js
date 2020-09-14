@@ -4,6 +4,7 @@ const app = express(); // creates application object
 
 const PORT = process.env.PORT || 3000; // default to 3000 unless one is defined elswhere
 
+const budget = require("./models/budget.js")
 
 ////////////////////
 // Middleware
@@ -21,6 +22,13 @@ app.get('/', (req, res) => {
 
 app.get('/budgets', (req, res) => {
     res.render('./index.jsx')
+})
+
+app.get('/budgets/:index/show', (req, res) => {
+    res.render('./show.jsx', {
+        item:budget[req.params.index],
+        index: req.params.index
+    })
 })
 
 app.listen(PORT, () => {
