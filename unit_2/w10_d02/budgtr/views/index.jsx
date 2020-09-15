@@ -9,7 +9,7 @@ class index extends React.Component {
            <Layout>
                <h1>Budgtr</h1>
                <table>
-                   {budget.map((budget) => {
+                   {budget.map((budget, index) => {
                         return <tr>
                             <td>{[budget.date]}</td>
                             <td><a href={`/budgets/${index}/show`}>{[budget.name]}</a></td>
