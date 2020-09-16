@@ -12,7 +12,7 @@ class Index extends React.Component {
                     return <div className="pokemon">
                         <a href={`poke/${index}`}><img src={pokemon.img}></img></a> 
                         <h3 className="pokemon-name">{pokemon.name}</h3>
-                        <a href="/poke/new"><button class="btn btn-success btn-lg">Edit</button></a>
+                        <a href="/poke/edit"><button class="btn btn-success btn-lg" value={pokemon.name}>Edit</button></a>
                         </div>
                 })}
                 </div>
