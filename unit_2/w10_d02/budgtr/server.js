@@ -1,4 +1,5 @@
 const express = require("express"); // brings in express library
+const { reduce } = require("./models/budget.js");
 
 const app = express(); // creates application object
 
@@ -21,14 +22,27 @@ app.get('/', (req, res) => {
 })
 
 app.get('/budgets', (req, res) => {
-    res.render('./index.jsx')
+    res.render('./index.jsx', { budget })
+    const totalAmt = budget.reduce((total, item) => {
+        return totalAmt += Number(item.amount)
+    }, 0)
 })
 
-app.get('/budgets/:index/show', (req, res) => {
+app.get('/budgets/:index', (req, res) => {
     res.render('./show.jsx', {
         item:budget[req.params.index],
         index: req.params.index
     })
+})
+
+app.get('/new', (req, res) => {
+    res.render('./new.jsx')
+})
+
+app.post('/new', (req, res) => {
+    // res.send(res.body)
+    budget.push(req.body)
+    res.redirect('/budgets')
 })
 
 app.listen(PORT, () => {
