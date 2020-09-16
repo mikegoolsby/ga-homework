@@ -18,14 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 // Routes and routers
 ////////////////////
 app.get('/', (req, res) => {
-    res.send('<h1>Hello</h1>')
+    res.send('<h1>server running - hit /budgets route to run application</h1>')
 })
 
 app.get('/budgets', (req, res) => {
     res.render('./index.jsx', { budget })
-    const totalAmt = budget.reduce((total, item) => {
-        return totalAmt += Number(item.amount)
-    }, 0)
 })
 
 app.get('/budgets/:index', (req, res) => {
