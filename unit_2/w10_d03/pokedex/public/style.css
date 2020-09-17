@@ -1,3 +1,21 @@
+body {
+    background-image: url('https://ih1.redbubble.net/image.201326519.6642/flat,750x1000,075,f.u5.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.pokemon-name {
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
 img {
     width: 250px;
     height: 250px;

@@ -1,7 +1,8 @@
-const express    = require('express');
-const app        = express();
+const express  = require('express');
+const app  = express();
 const PORT = process.env.PORT || 3000;
-const Pokemon    = require('./models/pokemon.js');
+const Pokemon = require('./models/pokemon.js');
+const methodOverride = require('method-override')
 
 const pokeRouter = require('./controllers/poke')
 
@@ -13,7 +14,7 @@ app.set("view engine", "jsx"); //Tells Express that our View Engine will use .js
 app.engine("jsx", require("express-react-views").createEngine()); //Sets our View engine
 // Process form data, add it to req.body
 app.use(express.urlencoded({extended: true}))
-// app.use(methodOverride("_method"))
+app.use(methodOverride("_method"))
 
 // Index
 app.use('/poke', pokeRouter)

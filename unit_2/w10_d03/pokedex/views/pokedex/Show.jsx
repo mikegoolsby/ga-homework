@@ -6,6 +6,7 @@ class Show extends React.Component{
         const {pokemon, index} = this.props
         return(
             <Layout>
+                <a href="/poke" class="badge badge-info">Go Back</a>
                 <ul class="list-group">
                     <li class="list-group-item">Name: {pokemon.name}</li>
                     <li class="list-group-item">Type: {pokemon.type}</li>

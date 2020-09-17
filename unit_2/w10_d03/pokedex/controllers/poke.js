@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
 })
 
 // Delete
-router.delete('/:index/edit', (req, res) => {
+router.delete('/:index', (req, res) => {
     pokemon.splice(req.params.index,1)
     res.redirect("/poke/")
 })
@@ -27,7 +27,7 @@ router.delete('/:index/edit', (req, res) => {
 router.get('/:index/edit', (req, res) => {
     res.render("pokedex/Edit.jsx", {
         pokemon:pokemon[req.params.index],
-        index: req.params.index
+        index:req.params.index
     })
 })
 

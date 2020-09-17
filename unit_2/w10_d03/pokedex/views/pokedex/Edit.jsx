@@ -7,6 +7,7 @@ class Edit extends React.Component {
         const {pokemon, index} = this.props
         return(
             <Layout>
+                <a href="/poke" class="badge badge-info">Go Back</a>
                 <form action={`/poke/${index}?_method=PUT`} method="post">
                     <label>
                         <input type="text" placeholder="Name" class="input-group-text" name="name" value={pokemon.name}/>
@@ -14,7 +15,7 @@ class Edit extends React.Component {
                         <input type="text" placeholder="HP" class="input-group-text" name="hp" value={pokemon.stats.hp}/>
                         <input type="text" placeholder="Attack" class="input-group-text" name="attack" value={pokemon.stats.attack}/>
                         <input type="text" placeholder="Defense" class="input-group-text" name="defense" value={pokemon.stats.defense}/>
-                        <input type="submit" class="btn btn-info" value="Edit Pokemon"></input>
+                        <input type="submit" class="btn btn-danger" value="Save Changes"></input>
                     </label>
                 </form>
             </Layout>
