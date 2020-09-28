@@ -7,7 +7,7 @@ class Index extends React.Component {
         const {product, index} = this.props
         return (
             <Layout>
-                <button type="button" class="btn btn-info">Add Space Vehicle</button>
+                <a href="/home/new"><button type="button" class="btn btn-info">Add to the Fleet</button></a>
                 {product.map((product, index) => {
                     let junkIndicator = <li>Currently Space Junk - Out of Stock</li>
                     if (product.qty > 0) {
@@ -17,7 +17,7 @@ class Index extends React.Component {
                         <div class="row">
                         <ul key={index} >
                         <li>{product.name}</li>
-                        <a href={`/products/${product._id}`}> <img src={product.img}></img></a>
+                        <a href={`/home/${product._id}`}> <img src={product.img}></img></a>
                             <li>Description: {product.description}</li>
                             <li>Cost (per launch): ${product.price}MM</li>
                             {junkIndicator}

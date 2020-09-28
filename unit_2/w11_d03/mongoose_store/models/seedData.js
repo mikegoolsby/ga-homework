@@ -35,6 +35,6 @@ const seedData = [
     }
 ]
 
-Products.create(seedData, (err, data) => {
-    console.log(data)
-})
+// Products.create(seedData, (err, data) => {
+//     console.log(data)
+// })
