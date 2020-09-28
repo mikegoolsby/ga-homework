@@ -1,3 +1,7 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 img {
     height: 300px;
     width: 200px;
@@ -13,4 +17,10 @@ button {
 
 .form-group {
     margin: 18px;
+}
+
+#index {
+    background-color: #FC3D21;
+    border-style: solid;
+    border-color: black;
 }

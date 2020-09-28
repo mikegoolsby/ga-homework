@@ -15,17 +15,17 @@ class Show extends React.Component {
         return (
             <Layout>
                 <a href="/home"><button type="button" class="btn btn-outline-dark">Back</button></a>
-                <div className="main">
-                    <ul key={index}>
-                    <li>{product.name}</li>
-                        <a href={`/home/${product._id}`}> <img src={product.img}></img></a>
-                            <li>Description: {product.description}</li>
-                            <li>Cost (per launch): ${product.price}MM</li>
+                <div class="d-flex flex-row">
+                    <ul key={index} class="p-2">
+                    <h3 class="p-2">{product.name}</h3>
+                        <a href={`/home/${product._id}`} class="p-2"> <img src={product.img} class="p-2 rounded"></img></a>
+                            <li class="p-2">Description: {product.description}</li>
+                            <li class="p-2">Cost (per launch): ${product.price}MM</li>
                             {junkIndicator}
-                    </ul>
                     <form action={`/home/${product._id}?_method=DELETE`} method="POST">
-                    <button type="submit" class="btn btn-danger" value="Delete">Delete</button>
+                    <button type="submit" class="btn btn-danger p-2" value="Delete">Delete</button>
                     </form>
+                    </ul>
                 </div>
             </Layout>
         )
