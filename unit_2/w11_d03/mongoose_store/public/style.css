@@ -1,0 +1,12 @@
+img {
+    height: 300px;
+    width: 200px;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    margin-left: 25px;
+}
