@@ -52,3 +52,7 @@
 ####
 
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
+p colors.sample()
+p colors.reverse()
+p colors.map(&:upcase)
