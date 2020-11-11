@@ -51,8 +51,58 @@
 # Color Array
 ####
 
-colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+# colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
-p colors.sample()
-p colors.reverse()
-p colors.map(&:upcase)
+# p colors.sample()
+# p colors.reverse()
+# p colors.map(&:upcase)
+
+####
+# Methods
+####
+
+# def find_area height, width
+#     height * width
+# end
+
+# nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0]
+
+# def multiply_each_by_five arr
+#     arr.each{|item| p item*5}
+# end
+
+# multiply_each_by_five nums
+
+# Hashes
+
+book = {
+    title: 'The Great Gatsby',
+    author: 'F Scott Fitzgerald',
+    year: 1925,
+    price: 10
+}
+  
+  lamp = {
+    type: 'reading',
+    brand: 'Ikea',
+    price: 25
+}
+  
+  table = {
+    type: 'bed side',
+    brand: 'Crate & Barrel',
+    color: 'birch',
+    price: 50
+}
+
+def print_price price
+    puts price[:price]
+end
+
+print_price lamp
+
+def print_item_sums price_1, price_2
+    puts price_1[:price] + price_2[:price]
+end
+
+print_item_sums lamp, book
