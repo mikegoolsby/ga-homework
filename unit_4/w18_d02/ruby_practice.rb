@@ -73,36 +73,74 @@
 
 # multiply_each_by_five nums
 
+####
 # Hashes
+####
 
-book = {
-    title: 'The Great Gatsby',
-    author: 'F Scott Fitzgerald',
-    year: 1925,
-    price: 10
-}
+# book = {
+#     title: 'The Great Gatsby',
+#     author: 'F Scott Fitzgerald',
+#     year: 1925,
+#     price: 10
+# }
   
-  lamp = {
-    type: 'reading',
-    brand: 'Ikea',
-    price: 25
-}
+#   lamp = {
+#     type: 'reading',
+#     brand: 'Ikea',
+#     price: 25
+# }
   
-  table = {
-    type: 'bed side',
-    brand: 'Crate & Barrel',
-    color: 'birch',
-    price: 50
-}
+#   table = {
+#     type: 'bed side',
+#     brand: 'Crate & Barrel',
+#     color: 'birch',
+#     price: 50
+# }
 
-def print_price price
-    puts price[:price]
-end
+# def print_price price
+#     puts price[:price]
+# end
 
-print_price lamp
+# print_price lamp
 
-def print_item_sums price_1, price_2
-    puts price_1[:price] + price_2[:price]
-end
+# def print_item_sums price_1, price_2
+#     puts price_1[:price] + price_2[:price]
+# end
 
-print_item_sums lamp, book
+# print_item_sums lamp, book
+
+####
+# Solving Problems with Ruby
+####
+
+# def euler_problem
+#     arr = []
+#     sum = 0
+#     for i in 1..999
+#         if i % 3.0 == 0
+#             arr.push(i)
+#         elsif i % 5.0 == 0
+#             arr.push(i)
+#         else
+#         end
+#     end
+#     arr.map{ |num| sum += num}
+#     p sum
+# end
+
+# euler_problem
+
+# def is_prime?(num)
+#     (2..(num - 1)).each do |n|
+#       return if num % n == 0
+#     end
+#     puts "#{num} is prime"
+# end
+
+# def get_primes limit  
+# (1..limit).each{ |num| puts is_prime? num }
+# end
+
+
+
+# get_primes 200
