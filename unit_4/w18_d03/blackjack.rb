@@ -35,11 +35,12 @@ end
 
 
 for i in 1..4
-    for i in Array(2..11) + [10,10,10]
+    for i in Array(2..11) + [10,10,10] # googled this, to be honest
         deck.push(Card.new(i))      
     end
 end
 
+#array method
 deck.shuffle!
 
 
